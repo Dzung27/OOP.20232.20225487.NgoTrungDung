@@ -1,0 +1,19 @@
+1. Which classes are aggregates of other classes? Checking all constructors of whole classes if they initialize for their parts?
+Media
+2. What are the advantages of Polymorphism?
+	+ Easy to add or remove information
+	+ Convenience
+3. How is Inheritance useful to achieve Polymorphism in Java?
+	+ Override
+4. What are the differences between Polymorphism and Inheritance in Java?
+	+ Conceptual Difference: Inheritance is a mechanism where a subclass inherits properties and behaviors from a superclass. Polymorphism, on the other hand, refers to the ability of different objects to respond to the same message or method call in different ways.
+	+ Syntax while Inheritance using superclass , Polymorphism using override
+5. What class should implement the Comparable interface?
+	book, digtalvideodisc, compactdisc
+6. In those classes, how should you implement the compareTo()method to reflect the ordering that 
+we want?
+	should return a negative integer, zero, or a positive integer depending on whether the current object should be ordered before, equal to, or after the specified object.
+7. Can we have two ordering rules of the item (by title then cost and by cost then title) if we use this Comparable interface approach?
+	No
+8. Suppose the DVDs have a different ordering rule from the other media types, that is by title, then decreasing length, then cost. How would you modify your code to allow this?
+	Custom a different Comparator
